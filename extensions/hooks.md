@@ -196,14 +196,14 @@ export default ({ embed }, { env }) => {
 | `auth.login`                  | The login payload               | `status`, `user`, `provider`         |
 | `auth.jwt`                    | The auth token                  | `status`, `user`, `provider`, `type` |
 | `authenticate`                | The empty accountability object | `req`                                |
-| `(<collection>.)items.query`  | The items query                 | `collection`                         |
-| `(<collection>.)items.read`   | The read item                   | `query`, `collection`                |
-| `(<collection>.)items.create` | The new item                    | `collection`                         |
-| `(<collection>.)items.update` | The updated item                | `keys`, `collection`                 |
-| `(<collection>.)items.delete` | The keys of the item            | `collection`                         |
-| `<system-collection>.create`  | The new item                    | `collection`                         |
-| `<system-collection>.update`  | The updated item                | `keys`, `collection`                 |
-| `<system-collection>.delete`  | The keys of the item            | `collection`                         |
+| `(<collection>.)items.query`  | The items query                 | `collection`, `req`                  |
+| `(<collection>.)items.read`   | The read item                   | `query`, `collection`, `req`         |
+| `(<collection>.)items.create` | The new item                    | `collection`, `req`                  |
+| `(<collection>.)items.update` | The updated item                | `keys`, `collection`, `req`          |
+| `(<collection>.)items.delete` | The keys of the item            | `collection`, `req`                  |
+| `<system-collection>.create`  | The new item                    | `collection`, `req`                  |
+| `<system-collection>.update`  | The updated item                | `keys`, `collection`, `req`          |
+| `<system-collection>.delete`  | The keys of the item            | `collection`, `req`                  |
 
 ::: tip System Collections
 
